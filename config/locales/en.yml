@@ -32,26 +32,20 @@
 en:
   hello: "Hello world"
 
-  superbe_studio_a_Louer: "Beautiful studio to rent"
-  À_proximité_des_pistes_dans_la_belle_résidence_des_Grands_Sorbiers: "Close to the slop in the beautiful Residence des Grands Sorbiers"
-  Appartement_lumineux_avec_une_jolie_vue_sur_les montagne: "Bright apartment with an amazing montain view"
-  3_min_à_pied_des_pistes_et_10_min_du_centre_de_la_station: "3 min walking from the ski slope and 10 min from the ski resort center"
+  Superbe_studio_a_Louer: "Beautiful Studio to Rent"
+  À_proximité_des_pistes_dans_la_belle_résidence_des_Grands_Sorbiers: "Close to the slop in the beautiful Residence des Grands Sorbiers."
+  Appartement_lumineux_avec_une_jolie_vue_sur_les montagne: "Bright apartment with an amazing montain view."
+  3_min_à_pied_des_pistes_et_10_min_du_centre_de_la_station: "3 min walking from the ski slope and 10 min from the ski resort center."
   Surface_25m²: "Surface : 25m²"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  Pour_toutes_information_me_contacter_par_mail: "Please contact me by email for more informations"
+  1_lit_double_(2_matelas_de_90): "1 double bed (2 mattress of 90cm)"
+  1_canapé_lit_pour_2_personnes: "1 Sofa bed for 2 persons "
+  1_cuisine_équipée,_1_salles_de_bain,_1_casier_à_ski_privatif,_1_place_de_parking: "1 fitted kitchen, 1 bathroom, 1 private ski locker"
+  La_capacité_de_couchage_est_de_4_personnes,_mais_pour_plus_de_confort,_je_recommande_l'appartement_pour_2: "The sleeping capacity is 4 persons, but for more comfort I recommend the apartment for 2."
+  Parking_à_disposition: "Parking space"
+  Photos: "Photos"
+  Réservation_en_direct,_ci_dessous: "Direct Booking Below"
+  Meilleur_tarif_garanti: "Best price garanteed"
+  Booking: "Booking"
+  Contact: "Contact"
+  Pour_toutes_information_me_contacter_par_mail_ou_telephone: "For more informations, please send me an email or phone me, Maxence."
 

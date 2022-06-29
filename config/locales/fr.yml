@@ -2,41 +2,22 @@ fr:
 
   #traduction page home.html.erb
 
-  Superbe_studio_a_Louer: "Superbe studio à Louer"
+  Superbe_studio_a_Louer: "Superbe Studio à Louer"
   Studio: "Studio"
-  À_proximité_des_pistes_dans_la_belle_résidence_des_Grands_Sorbiers: "À proximité des pistes dans la belle résidence des Grands Sorbiers"
-  Appartement_lumineux_avec_une_jolie_vue_sur_les montagne: "Appartement lumineux avec une jolie vue sur les montagne"
-  3_min_à_pied_des_pistes_et_10_min_du_centre_de_la_station: "3 min à pied des pistes et 10 min du centre de la station"
+  À_proximité_des_pistes_dans_la_belle_résidence_des_Grands_Sorbiers: "À proximité des pistes dans la belle résidence des Grands Sorbiers."
+  Appartement_lumineux_avec_une_jolie_vue_sur_les montagne: "Appartement lumineux avec une jolie vue sur les montagne."
+  3_min_à_pied_des_pistes_et_10_min_du_centre_de_la_station: "3 min à pied des pistes et 10 min du centre de la station."
   Surface_25m²: "Surface : 25m²"
   1_lit_double_(2_matelas_de_90): "1 lit double (2 matelas de 90)"
   1_canapé_lit_pour_2_personnes: "1 canapé lit pour 2 personnes"
-  1_cuisine_équipée,_1_salles_de_bain,_1_casier_à_ski_privatif,_1_place_de_parking: "1 cuisine équipée, 1 salles de bain, 1 casier à ski privatif, 1 place de parking"
-  La_capacité_de_couchage_est_de_4_personnes,_mais_pour_plus_de_confort,_je_recommande_l'appartement_pour_2: "La capacité de couchage est de 4 personnes, mais pour plus de confort, je recommande l'appartement pour 2"
+  1_cuisine_équipée,_1_salles_de_bain,_1_casier_à_ski_privatif,_1_place_de_parking: "1 cuisine équipée, 1 salle de bain, 1 casier à ski privatif"
+  La_capacité_de_couchage_est_de_4_personnes,_mais_pour_plus_de_confort,_je_recommande_l'appartement_pour_2: "La capacité de couchage est de 4 personnes, mais pour plus de confort, je recommande l'appartement pour 2."
   Parking_à_disposition: "Parking à disposition"
   Photos: "Photos"
   Réservation_en_direct,_ci_dessous: "Réservation en direct, ci dessous"
   Meilleur_tarif_garanti: "Meilleur tarif garanti"
   Booking: "Réservation"
   Contact: "Contact"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  Pour_toutes_information_me_contacter_par_mail: "Pour toutes informations complémentaires veuillez s'il vous plait me contacter par mail ou par téléphone"
+  Pour_toutes_information_me_contacter_par_mail_ou_telephone: "Pour toutes informations complémentaires veuillez s'il vous plait me contacter par mail ou par téléphone, Maxence."
 
 
