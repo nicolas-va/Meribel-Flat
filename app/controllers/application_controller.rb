@@ -1,14 +1,16 @@
 class ApplicationController < ActionController::Base
   before_action :authenticate_user!
+  before_action :set_local
 end
 
-before_action :set_local
+
 
 def set_local
   if user_signed_in?
     I18n.locale = current_user.language
   else
   I18n.locale = params[:lang] || locale_from_header || I18n.default_locale
+end
 end
 
 def locale_from_header
