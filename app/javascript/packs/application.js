@@ -14,3 +14,9 @@ ActiveStorage.start()
 
 import "controllers"
 import "bootstrap"
+
+
+require jquery.ui.all
+require jquery.ui.datepicker-en
+require jquery.ui.datepicker-es
+require jquery.ui.datepicker-fr

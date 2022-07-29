@@ -1,0 +1,25 @@
+<div class="body">
+<%= simple_form_for (:bookings) do |f| %>
+  <p><%= t("Starting_date")%></p>
+  <%= f.date_select :start_date%>
+  <p><%= t("End_date")%></p>
+  <%= f.date_select :end_date%>
+  <br>
+  <br>
+  <p><%= t("Name")%></p><%= f.text_field :name %><p><%= t("Surname")%></p><%= f.text_field :surname %>
+  <br>
+  <p><%= t("Email")%></p>
+  <input type="email" name="address" id="address" />
+  <br>
+  <p><%= t("comments")%></p>
+  <%= f.text_area :body, :id => "comment", :value => "Please write us" %>
+  <br>
+
+  <br>
+  <%= f.submit "Submit Booking", class: "btn btn-primary" %>
+
+
+
+<% end %>
+
+</div>

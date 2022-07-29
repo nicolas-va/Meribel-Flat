@@ -68,3 +68,5 @@ gem 'i18n'
 
 gem 'flag-icons-rails'
 
+gem 'simple-form-datepicker', '~> 0.1.3'
+
