@@ -1,0 +1,70 @@
+
+<!doctype html>
+<html lang="fr">
+<html lang="en">
+<html lang="es">
+<html lang="ru">
+
+
+  <head>
+
+
+    <!-- Required meta tags -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  </head>
+
+
+  <body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+
+
+</html>
+
+
+
+
+<h8><%= t("Merci de me contacter pour connaitre les disponnibilités")%></h8>
+<br></br>
+  <%= simple_form_for (:bookings) do |f| %>
+   <div class="booking  justify-content-center">
+     <div class="booking">
+      <h4><%= t("Booking")%></h4>
+      <h6><%= t("Nom")%></h6>
+      <%= f.text_field  :surname, rows:1, cols:40, required: true, class: "contact-form-text-area" %></br>
+
+
+      <h6><%= t("Prenom")%></h6>
+      <%= f.text_field  :name, required: true, class: "contact-form-text-area" %></br>
+
+      <h6><%= t("Email")%></h6>
+      <%= f.text_field :email, required: true, class: "contact-form-text-area" %></br><br>
+
+      <h6><%= t("Starting_date")%></h6>
+      <input type="date" name="starting_date" value="" class="wpcf7-form-control wpcf7-date wpcf7-validates-as-required wpcf7-validates-as-date" aria-required="true" aria-invalid="false">
+
+      <h6><%= t("End_date")%></h6>
+      <input type="date" name="end_date" value="" class="wpcf7-form-control wpcf7-date wpcf7-validates-as-required wpcf7-validates-as-date" aria-required="true" aria-invalid="false">
+        <br>
+        <br>
+
+      <h6><%= t("Message")%></h6>
+      <%= f.text_area :message, rows: 10, cols: 35, required: true, class: "contact-form-text-area flex",
+            placeholder: "Write a message"%></br>
+      <%= f.submit 'Send Message', class: 'btn btn-primary' %>
+
+  <% end %>
+  </div>
+</div>
+</div>

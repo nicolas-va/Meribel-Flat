@@ -1,7 +1,8 @@
 class BookingsController < ApplicationController
 
 
-
+  def booking
+  end
 
   def index
     @bookings = Booking.all
@@ -19,7 +20,6 @@ class BookingsController < ApplicationController
 
   def create
     @booking = Booking.new(:start_date, :end_date)
-    @booking.user = current_user
   end
 
 

@@ -1,5 +1,10 @@
 class Booking < ApplicationRecord
-  belongs_to :user
+
+
+  attribute :name,      validate: true
+  attribute :email,     validate: /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
+  attribute :message
+  attribute :surname,  captcha: true
 
   validate :start_date, :end_date, presence: true, availability: true
   validate :end_date_after_start_date

@@ -1,26 +1,19 @@
+<!-- app/views/static_pages/index.html.erb -->
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <html lang="en">
 <html lang="es">
 <html lang="ru">
-
-
-  <head>
-
-
-    <!-- Required meta tags -->
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-  </head>
-
-
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artistic Landing Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  <link rel="stylesheet" href="styles.css"> <!-- Add this line to link your custom stylesheet -->
+</head>
+<body>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -29,57 +22,72 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 
-
-</html>
-
-  <div class="body">
-    <div class="row"><h3><%= t("Superbe_studio_a_Louer") %></h3></div>
-    <div class="row"><p>Meribel - Les Allues</p></div>
-    <div class=""><a href="booking" class="btn btn-primary"><%= t("Booking")%></a></div>
-  </div>
-
-
-
-<div class="body1">
-  <div class="row">
-    <div class="col-12 col-lg-8">
-      <p></p>
-      <h5><%= t("Studio")%></h5>
-      <p></p>
-      <p></p>
-      <p></p>
-      <p></p>
-      <h6><%= t("À_proximité_des_pistes_dans_la_belle_résidence_des_Grands_Sorbiers")%></h6>
-      <h6><%= t("Appartement_lumineux_avec_une_jolie_vue_sur_les montagne")%></h6>
-      <h6><%= t("3_min_à_pied_des_pistes_et_10_min_du_centre_de_la_station")%></h6><br>
-      <br><h6><%= t("Surface_25m²")%></h6>
-      <h6><%= t("1_lit_double_(2_matelas_de_90)")%></h6>
-      <h6><%= t("1_canapé_lit_pour_2_personnes")%></h6>
-      <h6><%= t("1_cuisine_équipée,_1_salles_de_bain,_1_casier_à_ski_privatif,_1_place_de_parking")%></h6>
-      <h6><%= t("La_capacité_de_couchage_est_de_4_personnes,_mais_pour_plus_de_confort,_je_recommande_l'appartement_pour_2")%></h6>
-      <h6><%= t("Parking_à_disposition")%></h6>
-    </div>
+  <header>
+    <h1><%= t("Superbe_studio_a_Louer") %></h1>
+    <h2>Meribel - Les Allues</h2>
+    <br></br>
+    <p1><%= t("À_proximité_des_pistes_dans_la_belle_résidence_des_Grands_Sorbiers")%></p1>
+    <br></br>
+    <p1><%= t("Appartement_lumineux_avec_une_jolie_vue_sur_les montagne")%></p1>
+    <br></br>
+    <p1><%= t("3_min_à_pied_des_pistes_et_10_min_du_centre_de_la_station")%></p1>
+  </header>
 
 
 
-    <div class="col-12 col-lg-4">
 
-      <p></p>
-      <h5><%= t("Photos")%></h5>
+
+
+  <section>
+    <p><%= t("Surface_25m²")%></p>
+    <p><%= t("1_lit_double_(2_matelas_de_90)")%></p>
+    <p><%= t("1_canapé_lit_pour_2_personnes")%></p>
+    <p><%= t("1_cuisine_équipée,_1_salles_de_bain,_1_casier_à_ski_privatif,_1_place_de_parking")%></p>
+    <p><%= t("La_capacité_de_couchage_est_de_4_personnes,_mais_pour_plus_de_confort,_je_recommande_l'appartement_pour_2")%></p>
+    <p><%= t("Parking_à_disposition")%></h6>
+  </section>
+
+  <section>
+
+
 
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="5" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="6" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="7" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="8" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="9" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="10" class="active"></li>
         </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img class="d-block w-100" src="https://res.cloudinary.com/dek4vhpvr/image/upload/v1656430652/Meribel-Flat/vue_mtuafh.webp"  alt="First slide"></div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="https://res.cloudinary.com/dek4vhpvr/image/upload/v1656429767/Meribel-Flat/cuisine_flydn9.webp"  alt="Second slide"></div>
+          <img class="d-block w-100" src="https://res.cloudinary.com/dek4vhpvr/image/upload/v1663770733/Meribel-Flat/balcon_zn14pv.webp"  alt="Second slide"></div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="https://res.cloudinary.com/dek4vhpvr/image/upload/v1656429839/Meribel-Flat/lit_mylcpx.webp" class="rounded mx-auto d-block" alt="Third slide"></div>
+          <img class="d-block w-100" src="https://res.cloudinary.com/dek4vhpvr/image/upload/v1663770803/Meribel-Flat/salon_3_enraeg.webp"  alt="Third slide"></div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="https://res.cloudinary.com/dek4vhpvr/image/upload/v1656429767/Meribel-Flat/cuisine_flydn9.webp"  alt="Fourth slide"></div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="https://res.cloudinary.com/dek4vhpvr/image/upload/v1663770785/Meribel-Flat/salon_2_i0f21o.webp"  alt="Fifth slide"></div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="https://res.cloudinary.com/dek4vhpvr/image/upload/v1656429767/Meribel-Flat/cuisine_flydn9.webp"  alt="Six slide"></div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="https://res.cloudinary.com/dek4vhpvr/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1663778710/Meribel-Flat/salon_4_zueyqd.webp"  alt="Seven slide"></div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="https://res.cloudinary.com/dek4vhpvr/image/upload/v1656429839/Meribel-Flat/lit_mylcpx.webp"  alt="Eighth slide"></div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="https://res.cloudinary.com/dek4vhpvr/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1663779028/Meribel-Flat/salle_d_eau_copy_ibhnfs.jpg"  alt="Ninth slide"></div>
+
+
+        <div class="carousel-item">
+          <img class="d-block w-100" src="https://res.cloudinary.com/dek4vhpvr/image/upload/v1663770660/Meribel-Flat/Entree_Meribel_bcakph.webp" class="rounded mx-auto d-block" alt="Tenth slide"></div>
       </div>
 
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -89,65 +97,75 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span></a>
     </div>
-  </div>
+  </section>
+
+  <section>
+    <p><%= t("Activités_Meribel")%></p>
+    <p>🛷 🏂 ⛷  ⛳️ 🏊🏼‍♀️ 🏃🏻‍♀️ 🚴‍♀️ 🎾  </p>
+  </section>
+
+  <section>
+    <p><%= t("Contact")%></p>
+    <p><%= t("Pour_toutes_information_me_contacter_par_mail_ou_telephone")%></p>
+    <p><a href = "mailto: abc@example.com">max@meribel.com</a></p>
+    <p><a href="tel:0033615594302">+33 6 15 59 43 02</a></p>
+  </section>
+
+  <section>
+    <p><%= t("Retrouvez_l'appartement_sur")%>  <a href="https://www.airbnb.co.uk/rooms/41223134?location=M%C3%A9ribel%2C%20Les%20Allues%2C%20France&check_in=2022-07-20&check_out=2022-07-24&federated_search_id=d4ed3bb3-b706-4606-b584-83ae89f34f9e&source_impression_id=p3_1656428099_X8KpO87fbv9byWpw&translate_ugc=false" target="_blank">AirBnB</a></p>
+
+    <p>Localisation <a href="https://goo.gl/maps/GHY1hxhBBHgWff8u7"target="_blank">Google Map</a</p>
+  </section>
 
 
+  <section>
+    <a name="booking">
+<h4><%= t("Merci_de_me_contacter_pour_connaitre_les_disponnibilités")%></h4>
+<br></br>
+
+  <%= simple_form_for (:bookings) do |f| %>
+   <div class="booking  justify-content-center">
+     <div class="booking">
+      <h4><%= t("Booking")%></h4>
+      <h6><%= t("nom")%></h6>
+      <%= f.text_field  :surname, rows:1, cols:40, required: true, class: "contact-form-text-area" %></br>
 
 
+      <h6><%= t("prenom")%></h6>
+      <%= f.text_field  :name, required: true, class: "contact-form-text-area" %></br>
+
+      <h6><%= t("Email")%></h6>
+      <%= f.text_field :email, required: true, class: "contact-form-text-area" %></br><br>
+
+      <h6><%= t("Starting_date")%></h6>
+      <input type="date" name="starting_date" value="" class="wpcf7-form-control wpcf7-date wpcf7-validates-as-required wpcf7-validates-as-date" aria-required="true" aria-invalid="false">
+      <br></br>
+      <h6><%= t("End_date")%></h6>
+      <input type="date" name="end_date" value="" class="wpcf7-form-control wpcf7-date wpcf7-validates-as-required wpcf7-validates-as-date" aria-required="true" aria-invalid="false">
+        <br>
+        <br>
+
+      <h6><%= t("Message")%></h6>
+      <%= f.text_area :message, rows: 10, cols: 32, required: true, class: "contact-form-text-area flex",
+            placeholder: "Write_a_message"%></br>
+      <%= f.submit 'Send Message', class: 'btn btn-primary' %>
+
+  <% end %>
+  </section>
+
+  <section>
+
+  </section>
 
 
+  <!-- Other sections... -->
+
+  <footer>
+    &copy; <%= Time.now.year %> Meribel Studio
+  </footer>
+
+  <turbo-frame id="basket"></turbo-frame>
 
 
-<div class="body2">
-  <div class="row"><h5><%= t("Activités_Meribel")%></h5></div><br>
-  <br><h2>⛷ 🏂 🛷 🏃🏻‍♀️ ⛳️ 🚴‍♀️ 🎾 🏊🏼‍♀️ </h2>
-</div>
-
-
-<div class="body3">
-  <div class="row"><h5><%= t("Réservation_en_direct,_ci_dessous")%></h5></div>
-  <div class="row"><p><%= t("Meilleur_tarif_garanti")%></p></div>
-  <div class=""><a href="booking" class="btn btn-primary"><%= t("Booking")%></a></div>
-
-
-<div class="body4">
-  <div class="row"><h5><%= t("Contact")%></h5></div>
-  <p><%= t("Pour_toutes_information_me_contacter_par_mail_ou_telephone")%></p>
-  <p><a href = "mailto: abc@example.com">max@meribel.com</a></p>
-  <p><a href="tel:0033615594302">+33 6 15 59 43 02</a></p>
-</div>
-
-
-<div class="body5">
-  <div class="row"><h5>AirBnB </i></h5></div>
-  <p><%= t("Retrouvez_l'appartement_sur")%>  <a href="https://www.airbnb.co.uk/rooms/41223134?location=M%C3%A9ribel%2C%20Les%20Allues%2C%20France&check_in=2022-07-20&check_out=2022-07-24&federated_search_id=d4ed3bb3-b706-4606-b584-83ae89f34f9e&source_impression_id=p3_1656428099_X8KpO87fbv9byWpw&translate_ugc=false" target="_blank">AirBnB</a></p>
-</div>
-
-<div class="body6">
-  <div class="row"><h5>Localisation</i></h5></div>
-  <p><a href="https://goo.gl/maps/GHY1hxhBBHgWff8u7"target="_blank">Google Map</a></p>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</body>
+</html>
