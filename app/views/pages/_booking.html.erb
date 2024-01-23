@@ -1,0 +1,33 @@
+
+<h4><%= t("Merci_de_me_contacter_pour_connaitre_les_disponnibilités")%></h4>
+<br></br>
+  <%= simple_form_for (:bookings) do |f| %>
+   <div class="booking  justify-content-center">
+     <div class="booking">
+      <h6><%= t("Nom")%></h6>
+      <%= f.text_field  :surname, rows:1, cols:40, required: true, class: "contact-form-text-area" %></br>
+
+
+      <h6><%= t("Prenom")%></h6>
+      <%= f.text_field  :name, required: true, class: "contact-form-text-area" %></br>
+
+      <h6><%= t("Email")%></h6>
+      <%= f.text_field :email, required: true, class: "contact-form-text-area" %></br><br>
+
+      <h6><%= t("Starting_date")%></h6>
+      <input type="date" name="starting_date" value="" class="wpcf7-form-control wpcf7-date wpcf7-validates-as-required wpcf7-validates-as-date" aria-required="true" aria-invalid="false">
+
+      <h6><%= t("End_date")%></h6>
+      <input type="date" name="end_date" value="" class="wpcf7-form-control wpcf7-date wpcf7-validates-as-required wpcf7-validates-as-date" aria-required="true" aria-invalid="false">
+        <br>
+        <br>
+
+      <h6><%= t("Message")%></h6>
+      <%= f.text_area :message, rows: 10, cols: 35, required: true, class: "contact-form-text-area flex",
+            placeholder: "Write a message"%></br>
+      <%= f.submit 'Send Message', class: 'btn btn-primary' %>
+
+  <% end %>
+  </div>
+</div>
+</div>

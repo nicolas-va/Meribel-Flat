@@ -1,8 +1,7 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <div class="row">
+
+
   <div class="container-fluid">
     <%= link_to "#", class: "navbar-brand" do %>
-
 
     <% end %>
 
@@ -10,38 +9,20 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto">
-        <% if user_signed_in? %>
-          <li class="nav-item active">
-            <%= link_to "Home", "#", class: "nav-link" %>
-          </li>
-          <li class="nav-item">
-            <%= link_to "Messages", "#", class: "nav-link" %>
-          </li>
-          <li class="nav-item dropdown">
-            <%= image_tag "", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <%= link_to "Action", "#", class: "dropdown-item" %>
-              <%= link_to "Another action", "#", class: "dropdown-item" %>
-              <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
-            </div>
-          </li>
-        <% else %>
-          <li class="nav-item">
-            <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-          </li>
-        <% end %>
-         &nbsp;&nbsp;&nbsp;&nbsp;
 
 
-        <h2><%= link_to '🇫🇷', 'http://localhost:3000/?lang=fr' %><%= link_to '🇬🇧', 'http://localhost:3000/?lang=en' %></h2>
-      </ul>
-      </div>
+      <ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link active" href="#booking"><%= t("Booking")%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="http://localhost:3000/?lang=fr">🇫🇷</a>
+     <li class="nav-item">
+    <a class="nav-link" href="http://localhost:3000/?lang=en">🇬🇧</a>
+  </li>
+  </li>
+ </ul>
 
 
-</div>
-
-    </div>
 </div>
 
