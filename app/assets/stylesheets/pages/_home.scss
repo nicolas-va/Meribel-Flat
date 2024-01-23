@@ -34,7 +34,7 @@ body {
 
 
     h1 {
-      font-family:  Playfair Display;
+      font-family:  Source Sans Pro;
       color: #fff;
     }
 
@@ -87,3 +87,22 @@ body {
       bottom: 0;
       width: 100%;
     }
+
+    /* Default style for larger screens */
+.contact-form-text-area {
+    cols: 40;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .contact-form-text-area {
+        cols: 25;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form-text-area {
+        cols: 20;
+    }
+}
+

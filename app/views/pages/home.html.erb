@@ -8,7 +8,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Artistic Landing Page</title>
+  <title>Meribel Flat to Rent</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
   <link rel="stylesheet" href="styles.css"> <!-- Add this line to link your custom stylesheet -->
@@ -23,9 +23,8 @@
   </body>
 
   <header>
-    <h1><%= t("Superbe_studio_a_Louer") %></h1>
+    <h2><%= t("Superbe_studio_a_Louer") %></h2>
     <h3>Meribel - Les Allues</h3>
-    <br></br>
     <p1><%= t("À_proximité_des_pistes_dans_la_belle_résidence_des_Grands_Sorbiers")%></p1>
     <br></br>
     <p1><%= t("Appartement_lumineux_avec_une_jolie_vue_sur_les montagne")%></p1>
@@ -101,7 +100,7 @@
 
   <section>
     <p><%= t("Activités_Meribel")%></p>
-    <p>🛷 🏂 ⛷  ⛳️ 🏊🏼‍♀️ 🏃🏻‍♀️ 🚴‍♀️ 🎾  </p>
+    <p><h1>🛷 🏂 ⛷️ ⛳️ 🏊🏼‍♀️ 🏃🏻‍♀️ 🚴‍♀️ 🎾 </h1></p>
   </section>
 
   <section>
@@ -114,43 +113,12 @@
   <section>
     <p><%= t("Retrouvez_l'appartement_sur")%>  <a href="https://www.airbnb.co.uk/rooms/41223134?location=M%C3%A9ribel%2C%20Les%20Allues%2C%20France&check_in=2022-07-20&check_out=2022-07-24&federated_search_id=d4ed3bb3-b706-4606-b584-83ae89f34f9e&source_impression_id=p3_1656428099_X8KpO87fbv9byWpw&translate_ugc=false" target="_blank">AirBnB</a></p>
 
-    <p>Localisation <a href="https://goo.gl/maps/GHY1hxhBBHgWff8u7"target="_blank">Google Map</a</p>
+    <p>Localisation <a href="https://goo.gl/maps/GHY1hxhBBHgWff8u7"target="_blank">Google Map</a></p>
   </section>
 
 
   <section>
-    <a name="booking">
-<h4><%= t("Merci_de_me_contacter_pour_connaitre_les_disponnibilités")%></h4>
-<br></br>
-
-  <%= simple_form_for (:bookings) do |f| %>
-   <div class="booking  justify-content-center">
-     <div class="booking">
-      <h4><%= t("Booking")%></h4>
-      <h6><%= t("nom")%></h6>
-      <%= f.text_field  :surname, rows:1, cols:40, required: true, class: "contact-form-text-area" %></br>
-
-
-      <h6><%= t("prenom")%></h6>
-      <%= f.text_field  :name, required: true, class: "contact-form-text-area" %></br>
-
-      <h6><%= t("Email")%></h6>
-      <%= f.text_field :email, required: true, class: "contact-form-text-area" %></br><br>
-
-      <h6><%= t("Starting_date")%></h6>
-      <input type="date" name="starting_date" value="" class="wpcf7-form-control wpcf7-date wpcf7-validates-as-required wpcf7-validates-as-date" aria-required="true" aria-invalid="false">
-      <br></br>
-      <h6><%= t("End_date")%></h6>
-      <input type="date" name="end_date" value="" class="wpcf7-form-control wpcf7-date wpcf7-validates-as-required wpcf7-validates-as-date" aria-required="true" aria-invalid="false">
-        <br>
-        <br>
-
-      <h6><%= t("Message")%></h6>
-      <%= f.text_area :message, rows: 10, cols: 32, required: true, class: "contact-form-text-area flex",
-            placeholder: "Write_a_message"%></br>
-      <%= f.submit 'Send Message', class: 'btn btn-primary' %>
-
-  <% end %>
+    <%= render 'booking' %>
   </section>
 
   <br></br>
